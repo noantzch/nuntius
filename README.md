@@ -16,3 +16,6 @@
 
 ## Tamaño del Banner (título de cada pagina)
     pendiente al carousel de inicio
+
+## styles
+    por separado y luego unimos
