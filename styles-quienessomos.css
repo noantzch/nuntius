@@ -1,0 +1,173 @@
+.banner{
+    background-image: url("./images/quienessomosportada.jpg");
+    background-size:cover;
+    height: 25vw;
+}
+.banner h2{
+    padding: 3em;
+    text-shadow:  3px 3px 10px black;
+    font-size: 3vw;
+}
+.quienes-somos-info{
+    background-color: rgb(184, 4, 4);
+}
+.quienes-somos-info p{
+    font-size: 1.5vw;
+}
+@media (max-width: 768px) {
+    .banner{
+        height: 20vw;
+        background-image: none;
+    }
+    .banner h2{
+        padding: 2vw;
+        font-size: 12vw;
+        color: black;
+        text-shadow: none;
+    }
+    .quienes-somos-info{
+        background-color: white;
+    }
+    .quienes-somos-info p{
+        font-size: 3vw;
+        color: rgb(184, 4, 4);;
+    }
+}
+
+
+.lemas-container{
+    width: 100%;
+    margin: 10vw 10vw;
+}
+
+.lema{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 2vw;
+    margin: 2vw 2vw;
+    border-radius: 25% 5% 5% 5%;
+    width: 15%;
+    box-shadow: 2px 2px 10px grey;
+    transition: border-radius 0.8s ease, box-shadow 0.8s ease;
+}
+.lema:hover {
+    border-radius: 5% 5% 25% 5%;
+    box-shadow: 5px 5px 10px black;
+}
+.lema h5{
+    color: white;
+    font-size: 1.3vw;
+    text-shadow: 3px 3px 5px black;
+}
+.lema p{
+    color: white;
+    font-size: 1.1vw;
+    text-shadow: 3px 3px 5px black;
+    
+}
+.lema-down{
+    transform: translateY(-8vw);
+    background-color: #bf0d0dbd;
+}
+.lema-up{
+    background-color: #737d847a;
+}
+@media (max-width: 768px) {
+    .lemas-container{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 3em;
+    }
+    .lema{
+        width: 100%;
+        margin: 0;
+        padding: 1.2vw;
+        border-radius: 0;
+    }
+    .lema h5{
+        margin-top: 2vw;
+        font-size: 3vw;
+        text-align: center;
+    }
+    .lema p{
+        font-size: 3vw;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 2vw;
+
+    }
+    .lema-down{
+        transform: none;
+    }
+}
+/* nuestro equipo */
+.nuestroequipo-container-mobile{
+    display: none;
+}
+@media (max-width: 768px){
+    .nuestroequipo-container-desktop{ 
+            display: none;
+    }
+    .nuestroequipo-container-mobile{
+        display: block;
+
+    }
+}
+.nuestroequipo-container-desktop{
+    margin: 5vw;
+}
+.col-md-4{
+    width: auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 24% !important;
+}
+.card{
+    width: 18vw;
+    margin: 2em;
+}
+.card-img-top{
+    height: 24vw;
+    width: 100%;
+    transition: opacity 0.3s; 
+}
+.img-container {
+    position: relative;
+}
+.img-container:hover .hover-img {
+    opacity: 1;
+}
+.hover-img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    height: 24vw;
+}
+.card-body h5{
+    font-size: 1em;
+    text-align: center;
+}
+.card-body p{
+    font-size: 1em;
+}
+
+.carousel-item-left img{
+    width: 80vw !important;
+    max-width: 80vw !important;
+}
+.carousel-item img{
+    width: 80vw !important;
+    max-width: 80vw !important;
+}
+.carousel-item-next img{
+    width: 80vw !important;
+    max-width: 80vw !important;
+    transform: translateX(12vw);
+}
