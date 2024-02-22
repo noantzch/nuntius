@@ -1,3 +1,13 @@
-header{
-    
+.carousel-img-size{
+    height: 100vh;
+
+}
+
+.navbar{
+  font-size: 1.3rem;   
+}
+
+.nav-link.text-white.contacto{
+    border-radius: 20px;
+    background-color: red;
 }
