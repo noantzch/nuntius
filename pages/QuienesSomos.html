@@ -5,178 +5,226 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles-quienessomos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <title>Quienes Somos</title>
 </head>
 <body class="quienes-somos-container">
-    <p>------------------------NAVBAR--------------------------</p>
+
+<!--  banner y título-->    
     <div class="banner text-white text-center">
         <h2>Quienes somos</h2>
     </div>
+<!-- frase e info SUBTITULO -->
     <div class="quienes-somos-info  text-white text-center p-4">
-        <p class="p-1 font-italic">Somos los encargados de sistematizar tu emprendimiento, optimizando tu tiempo y ayudándote a tomar decisiones.</p>
-        <p class="p-1 font-italic">La información es la principal fuente de crecimiento, y nosotros te ayudamos a administrarla.</p>
-        <p class="p-1 font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p class="p-1 font-italic">Impulsamos la innovación tecnológica con soluciones a la medida para potenciar el éxito de su negocio</p>
+        <p class="p-1 font-italic">Expertos en IT comprometidos con la excelencia, ofrecemos servicios vanguardistas para alcanzar sus metas digitales.</p>
+        <p class="p-1 font-italic">Transformamos desafíos en oportunidades, brindando soluciones tecnológicas que impulsan el crecimiento y la eficiencia empresaria</p>
     </div>
-    <div class="lemas-container d-flex flex-wrap justify-content">
+<!-- LEMAS desktop -->
+    <div class="lemas-container flex-wrap justify-content:center align-content:center ">
         <div class="lema lema-up">
             <h5>Misión</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, obcaecati? Nulla minus corpor?</p>
+            <p>Facilitar la transformación digital de nuestros clientes, proporcionando soluciones tecnológicas innovadoras y personalizadas que impulsen su éxito empresarial y competitividad en el mercado global.</p>
         </div>
         <div class="lema lema-down">
-            <h5>Misión</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, obcaecati? Nulla minus corpor?</p>
+            <h5>Visión</h5>
+            <p>Ser líderes reconocidos en el sector de tecnología, destacando por nuestra excelencia en servicio, compromiso con la calidad y contribución significativa a la evolución positiva de la sociedad a través de la innovación.</p>
         </div>
         <div class="lema lema-up">
-            <h5>Misión</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, obcaecati? Nulla minus corpor?</p>
+            <h5>Compromiso</h5>
+            <p>Conectamos compromiso con resultados, construyendo relaciones sólidas y duraderas basadas en la confianza mutua</p>
         </div>
         <div class="lema lema-down">
-            <h5>Misión</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, obcaecati? Nulla minus corpor?</p>
+            <h5>Logros</h5>
+            <p>Nuestro mayor logro es su satisfacción. En cada avance tecnológico, nos esforzamos por superar expectativas y convertir clientes en socios satisfechos</p>
+        </div>
+    </div>
+    
+<!--  lemas mobile click sobre cada lema -->
+    <div class="lemas-container-padre-mobile">
+        <div class="lema-container-mobile">
+            <div class="lema-mobile lema-color1">
+                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id1')">Misión ⬇️</h4>
+                <p class="lema-p-mobile" id="lema-mobile-id1">Facilitar la transformación digital de nuestros clientes, proporcionando soluciones tecnológicas innovadoras y personalizadas que impulsen su éxito empresarial y competitividad en el mercado global.</p>
+            </div>
+        
+            <div class="lema-mobile lema-color2">
+                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id2')">Visión ⬇️ </h4>
+                <p class="lema-p-mobile" id="lema-mobile-id2">Ser líderes reconocidos en el sector de tecnología, destacando por nuestra excelencia en servicio, compromiso con la calidad y contribución significativa a la evolución positiva de la sociedad a través de la innovación.</p>
+            </div>
+        
+            <div class="lema-mobile lema-color1">
+                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id3')">Compromiso ⬇️</h4>
+                <p class="lema-p-mobile" id="lema-mobile-id3">Conectamos compromiso con resultados, construyendo relaciones sólidas y duraderas basadas en la confianza mutua3</p>
+            </div>
+            
+            <div class="lema-mobile lema-color2">
+                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id4')">Logros ⬇️</h4>
+                <p class="lema-p-mobile" id="lema-mobile-id4">Nuestro mayor logro es su satisfacción. En cada avance tecnológico, nos esforzamos por superar expectativas y convertir clientes en socios satisfechos</p>
+            </div>
         </div>
     </div>
 
-    <h4 class="text-center">Nuestro Equipo</h4>
-    <div class="nuestroequipo-container-desktop">
-        <div class="row justify-content-around">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="img-container">
-                        <img src="../images/feliz.jpeg" class="card-img-top" alt="Miembro del equipo">
-                        <img src="../images/enojado.jpeg" class="hover-img" alt="Otra imagen">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre 1</h5>
-                        <p class="card-text">Descripción breve del miembro 1.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="img-container">
-                        <img src="../images/feliz.jpeg" class="card-img-top" alt="Miembro del equipo">
-                        <img src="../images/enojado.jpeg" class="hover-img" alt="Otra imagen">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre 2</h5>
-                        <p class="card-text">Descripción breve del miembro 2.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="img-container">
-                        <img src="../images/feliz.jpeg" class="card-img-top" alt="Miembro del equipo">
-                        <img src="../images/enojado.jpeg" class="hover-img" alt="Otra imagen">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre 3</h5>
-                        <p class="card-text">Descripción breve del miembro 3.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="img-container">
-                        <img src="../images/feliz.jpeg" class="card-img-top" alt="Miembro del equipo">
-                        <img src="../images/enojado.jpeg" class="hover-img" alt="Otra imagen">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre 3</h5>
-                        <p class="card-text">Descripción breve del miembro 3.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="img-container">
-                        <img src="../images/feliz.jpeg" class="card-img-top" alt="Miembro del equipo">
-                        <img src="../images/enojado.jpeg" class="hover-img" alt="Otra imagen">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre 3</h5>
-                        <p class="card-text">Descripción breve del miembro 3.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="img-container">
-                        <img src="../images/feliz.jpeg" class="card-img-top" alt="Miembro del equipo">
-                        <img src="../images/enojado.jpeg" class="hover-img" alt="Otra imagen">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Nombre 3</h5>
-                        <p class="card-text">Descripción breve del miembro 3.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- titulo nuestro equipo -->
+    <h4 class="nuestroequipotitulo">Nuestro Equipo</h4>
+<!-- Nuestro equipo desktop -->
+<div class="nuestroequipo-container-desktop">
+    <div class="row justify-content-around" id="equipo-container">
+        <!-- Aquí se agregarán dinámicamente las tarjetas -->
     </div>
-    <div class="nuestroequipo-container-mobile">
-        <div class="container mt-5 d-flex flex-wrap justify-content-around">
-            <!-- Carrusel de Imágenes -->
-            <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="2500">
-                <div class="carousel-inner">
-                    <!-- Primera Imagen del Carrusel -->
-                    <div class="carousel-item active">
-                        <img src="/images/feliz.jpeg" class="d-block w-100 img-fluid carousel-image" alt="Imagen 1">
-                        <div class="carousel-caption">
-                            <h5 class="text-white">Nombre 1</h5>
-                            <p>Descripción 1.</p>
-                        </div>
-                    </div>
-                    <!-- Segunda Imagen del Carrusel -->
-                    <div class="carousel-item">
-                        <img src="/images/enojado.jpeg" class="d-block w-100 img-fluid carousel-image" alt="Imagen 2">
-                        <div class="carousel-caption">
-                            <h5 class="text-white">Nombre 2</h5>
-                            <p>Descripción 2.</p>
-                        </div>
-                    </div>
-                    <!-- Tercera Imagen del Carrusel -->
-                    <div class="carousel-item">
-                        <img src="/images/feliz.jpeg" class="d-block w-100 img-fluid carousel-image" alt="Imagen 3">
-                        <div class="carousel-caption">
-                            <h5 class="text-white">Nombre 3</h5>
-                            <p>Descripción 3.</p>
-                        </div>
-                    </div>
-                    <!-- Cuarta Imagen del Carrusel -->
-                    <div class="carousel-item">
-                        <img src="/images/enojado.jpeg" class="d-block w-100 img-fluid carousel-image" alt="Imagen 4">
-                        <div class="carousel-caption">
-                            <h5 class="text-white">Nombre 4</h5>
-                            <p>Descripción 4.</p>
-                        </div>
-                    </div>
-                    <!-- Puedes agregar más imágenes aquí -->
-    
-                    <!-- Controles de Navegación -->
-                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+</div>
+<!-- Nuestro equipo mobile -->
+    <div class="nuestroequipo-container-mobile" id="equipo-container-mobile">
     </div>
-    
-    
-    
-    
-    
-    
     
 
-    <p>------------------------------FOOTER------------------------</p>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+
+
+
+
+
+<!-- scripts -->
+<!-- script para lista y fotos de equipo desktop -->
+    <script>
+    jQuery(document).ready(function() {
+    jQuery.getJSON('../lista_equipo.json', function(data) {
+        jQuery.each(data, function(key, value) {
+           // Construir las rutas de las imágenes
+           var imgPathA = `../fotosEquipo/${key}_a.jpg`;
+            var imgPathB = `../fotosEquipo/${key}_b.jpg`;
+
+            // Crear el HTML para cada tarjeta con las imágenes dinámicas
+            var cardHtml = `
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="img-container">
+                            <img src="${imgPathA}" class="card-img-top" alt="Miembro del equipo ${value.nombre}">
+                            <img src="${imgPathB}" class="hover-img" alt="Otra imagen de ${value.nombre}">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">${value.nombre}</h5>
+                            <p class="card-text">${value.descripcion}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            jQuery('#equipo-container').append(cardHtml);
+        });
+    });
+});
+
+    </script>
+<!-- script para lista y fotos de equipo mobile -->
+    <script>
+        jQuery(document).ready(function() {
+            jQuery.getJSON('../lista_equipo.json', function(data) {
+                // Contador para determinar la posición de la imagen activa en el carrusel
+                var counter = 0;
+
+                // Construir el HTML para el carrusel
+                var carouselHtml = `
+                    <div class="container mt-5 d-flex flex-wrap justify-content-around">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="2500">
+                            <div class="carousel-inner">
+                `;
+
+                jQuery.each(data, function(key, value) {
+                    // Construir la ruta de la imagen
+                    var imgPath = `../fotosEquipo/${key}_a.jpg`;
+
+                    // Construir el HTML para cada ítem del carrusel
+                    var carouselItemHtml = `
+                        <div class="carousel-item ${counter === 0 ? 'active' : ''}">
+                            <img src="${imgPath}" class="d-block w-100 img-fluid carousel-image" alt="${value.nombre}">
+                            <div class="carousel-caption">
+                                <h5 class="text-white">${value.nombre}</h5>
+                                <p>${value.descripcion}</p>
+                            </div>
+                        </div>
+                    `;
+
+                    // Agregar el ítem al HTML del carrusel
+                    carouselHtml += carouselItemHtml;
+
+                    // Incrementar el contador
+                    counter++;
+                });
+
+                // Cerrar las etiquetas del carrusel y agregar los controles de navegación
+                carouselHtml += `
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                    </div>
+                `;
+
+                // Agregar el carrusel al contenedor
+                jQuery('#equipo-container-mobile').html(carouselHtml);
+            });
+        });
+    </script>
+<!-- animación movimeinto de lemas -->
+    <script>
+    let lastScrollPosition = window.scrollY;
+
+    document.addEventListener('scroll', function() {
+      const lemaUpElements = document.querySelectorAll('.lema-up');
+      const lemaDownElements = document.querySelectorAll('.lema-down');
+      const scrollY = window.scrollY;
+
+      if (scrollY > lastScrollPosition) {
+        // Scrolling down
+        lemaUpElements.forEach(function(element) {
+          element.classList.remove('move-up');
+        });
+
+        lemaDownElements.forEach(function(element) {
+          element.classList.add('move-down');
+        });
+      } else {
+        // Scrolling up
+        lemaUpElements.forEach(function(element) {
+          element.classList.add('move-up');
+        });
+
+        lemaDownElements.forEach(function(element) {
+          element.classList.remove('move-down');
+        });
+      }
+
+      lastScrollPosition = scrollY;
+    });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="../quienessomos.js"></script>
+    <script>
+        function mostrarOcultar(id) {
+          // Obtiene el párrafo correspondiente al clic
+          var contenido = document.getElementById(id);
+      
+          // Si el párrafo ya está visible, lo oculta; de lo contrario, lo muestra
+          contenido.style.display = contenido.style.display === 'block' ? 'none' : 'block';
+      
+          // Oculta todos los demás párrafos
+          var elementos = document.querySelectorAll('.lema-p-mobile');
+          elementos.forEach(function(elemento) {
+            if (elemento.id !== id) {
+              elemento.style.display = 'none';
+            }
+          });
+        }
+    </script>
+
 </body>
 </html>
