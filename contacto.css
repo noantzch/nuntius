@@ -1,0 +1,154 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; 
+}
+
+.input-group label {
+    width: 100px; 
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    vertical-align: top; 
+}
+
+footer{
+
+    background-color: black;
+}
+
+.FooterContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.SocialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.SocialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+
+
+.SocialIcons a i{
+font-size: 2em;
+color: black;
+opacity: 0.9;
+
+}
+/* Add margin to create space between links */
+.SocialIcons a:hover {
+    background-color: black;
+    transition: 0.5s;
+    
+}
+
+.SocialIcons a:hover i{
+color: white;
+transition: 0.5s;
+    
+}
+
+.footernav {
+
+    margin: 30px 0;
+
+}
+
+.footernav ul{
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.footernav ul li a{
+
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footernav ul li a:hover{
+
+    opacity: 1;
+
+}
+
+.Ft{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.Ft p{
+    color: white;
+
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+@media (max-width: 700px){
+    .footernav ul {
+        flex-direction: column;
+    }
+    
+}
+
+.footernav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+
+
+}
