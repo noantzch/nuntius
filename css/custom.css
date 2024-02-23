@@ -1,0 +1,331 @@
+/********** common setting **********/
+h2 {
+    font-size: 2.8rem !important;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+.atlas-cta {
+    border-radius: 22px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.atlas-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.atlas-cta-wide {
+    width: 100%;
+}
+
+.cta-green {
+    background: white;
+    color: #192440;
+}
+
+.cta-green:hover {
+    color: #ffffff;
+    background: white;
+}
+
+.cta-blue {
+    background: #192440;
+    color: #ffffff;
+}
+
+.cta-blue:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+.cta-ghost {
+    border: 2px solid #192440 !important;
+    color: #192440;
+}
+
+.cta-ghost:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+#banner {
+    background-size: cover;
+}
+
+/********** banner **********/
+#banner header {
+    overflow: hidden;
+}
+
+#banner header img {
+    max-width: 80px;
+}
+
+/********** feature (skew background) **********/
+.feature img {
+    width: 100%;
+    max-width: 480px;
+}
+
+#feature-first {
+    background: linear-gradient(168deg, #ffffff 55%, #ffffff 0);
+}
+
+#feature-last {
+    background: white;
+}
+
+/********** price table **********/
+#price-table {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#price-table__premium {
+    background: #192440;
+    color: #ffffff;
+}
+
+#price-table ul li {
+    padding: 5px 0;
+}
+
+/********** contact **********/
+#contact {
+    background-size: cover;
+}
+
+#contact ul li {
+    padding: 3px 0;
+}
+
+#contact form {
+    color: #00FFAD;
+}
+
+#contact form input,
+#contact form textarea {
+    background: transparent;
+    border: 1px solid white;
+    color: #ffffff;
+}
+
+/********** copyright **********/
+#copyright {
+    background: #192440;
+    padding: 2rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #192440;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: white;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+
+.h11{
+    justify-content: center;
+
+    margin-top: auto;
+    margin-left: 600px;
+
+}
+
+.slider{
+    
+    width:100%;
+    display: flex;
+    
+    margin: 20px 15px;
+   
+    overflow: hidden;
+
+    justify-content: center;
+}
+.slider .slide-track{
+    display:flex;
+   
+   
+    animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(100px * 9);
+    
+
+}
+
+.slider .slide{
+    width: 200px;
+    height: 200px;
+
+}
+.slider .slide img{
+    width: 100%;
+
+
+}
+@keyframes scroll{
+    0%{
+        -webkit-transform:traslatex(0);
+        transform:translatex(0);
+    }
+    100%{
+        -webkit-transform:traslatex(calc(-400px * 6));
+        transform:translatex(calc(-400px * 6));
+
+    }
+}
+
+
+
+/**** FOOTER ***/
+
+footer{
+
+    background-color: black;
+}
+
+.FooterContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.SocialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.SocialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+
+
+.SocialIcons a i{
+font-size: 2em;
+color: black;
+opacity: 0.9;
+
+}
+/* Add margin to create space between links */
+.SocialIcons a:hover {
+    background-color: black;
+    transition: 0.5s;
+    
+}
+
+.SocialIcons a:hover i{
+color: white;
+transition: 0.5s;
+    
+}
+
+.footernav {
+
+    margin: 30px 0;
+
+}
+
+.footernav ul{
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.footernav ul li a{
+
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+
+.footernav ul li a:hover{
+
+    opacity: 1;
+
+}
+
+.Ft{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.Ft p{
+    color: white;
+
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+@media (max-width: 700px){
+    .footernav ul {
+        flex-direction: column;
+    }
+    
+}
+
+.footernav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+
+
+}
+
+
+
+/********** RWD **********/
+@media (max-width: 575px) {
+    #banner h1 {
+        font-size: 3.6rem;
+    }
+}
