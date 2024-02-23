@@ -96,6 +96,7 @@
 }
 .nuestroequipo-container-mobile{
     display: none;
+    margin-bottom: 30vw;
 }
 @media (max-width: 768px){
     .nuestroequipotitulo{
@@ -218,4 +219,22 @@
 .lema-color1{
     background-color: #bf0a0ae7;
 }
-
+.iconLema{
+    display: block;
+    position: absolute;
+    transform: translateX(58vw) translateY(-9vw);
+}
+.iconLemaCerrado{
+    display: none;
+}
+#lema-mobile-id3-icon-open,#lema-mobile-id3-icon-close{
+    transform: translateX(68vw) translateY(-9vw);
+}
+.carousel-caption{
+    bottom: -8vw !important;
+    width: 70vw;
+    transform: translateX(-10vw);
+}
+.carousel-caption p{
+    font-size: 4vw;
+}

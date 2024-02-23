@@ -45,22 +45,22 @@
     <div class="lemas-container-padre-mobile">
         <div class="lema-container-mobile">
             <div class="lema-mobile lema-color1">
-                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id1')">Misión ⬇️</h4>
+                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id1')">Misión<span id="lema-mobile-id1-icon-open" class="iconLema iconLemaCerrado">↑</span> <span id="lema-mobile-id1-icon-close" class=" iconLema">↓</span></h4>
                 <p class="lema-p-mobile" id="lema-mobile-id1">Facilitar la transformación digital de nuestros clientes, proporcionando soluciones tecnológicas innovadoras y personalizadas que impulsen su éxito empresarial y competitividad en el mercado global.</p>
             </div>
         
             <div class="lema-mobile lema-color2">
-                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id2')">Visión ⬇️ </h4>
+                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id2')">Visión<span id="lema-mobile-id2-icon-open" class="iconLema iconLemaCerrado">↑</span> <span id="lema-mobile-id2-icon-close" class=" iconLema">↓</span></h4>
                 <p class="lema-p-mobile" id="lema-mobile-id2">Ser líderes reconocidos en el sector de tecnología, destacando por nuestra excelencia en servicio, compromiso con la calidad y contribución significativa a la evolución positiva de la sociedad a través de la innovación.</p>
             </div>
         
             <div class="lema-mobile lema-color1">
-                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id3')">Compromiso ⬇️</h4>
+                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id3')">Compromiso<span id="lema-mobile-id3-icon-open" class="iconLema iconLemaCerrado">↑</span> <span id="lema-mobile-id3-icon-close" class=" iconLema">↓</span></h4>
                 <p class="lema-p-mobile" id="lema-mobile-id3">Conectamos compromiso con resultados, construyendo relaciones sólidas y duraderas basadas en la confianza mutua3</p>
             </div>
             
             <div class="lema-mobile lema-color2">
-                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id4')">Logros ⬇️</h4>
+                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id4')">Logros<span id="lema-mobile-id4-icon-open" class="iconLema iconLemaCerrado">↑</span> <span id="lema-mobile-id4-icon-close" class=" iconLema">↓</span></h4>
                 <p class="lema-p-mobile" id="lema-mobile-id4">Nuestro mayor logro es su satisfacción. En cada avance tecnológico, nos esforzamos por superar expectativas y convertir clientes en socios satisfechos</p>
             </div>
         </div>
@@ -208,15 +208,20 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- script lemas mobile -->
     <script>
         function mostrarOcultar(id) {
           // Obtiene el párrafo correspondiente al clic
-          var contenido = document.getElementById(id);
-      
-          // Si el párrafo ya está visible, lo oculta; de lo contrario, lo muestra
-          contenido.style.display = contenido.style.display === 'block' ? 'none' : 'block';
-      
-          // Oculta todos los demás párrafos
+        var contenido = document.getElementById(id);
+        let iconClose = document.getElementById(id + "-icon-close")
+        let iconOpen = document.getElementById(id + "-icon-open")
+
+        // Si el párrafo ya está visible, lo oculta; de lo contrario, lo muestra
+        contenido.style.display = contenido.style.display === 'block' ? 'none' : 'block';
+        iconClose.style.display = iconClose.style.display === 'none' ? 'block' : 'none';
+        iconOpen.style.display = iconOpen.style.display === 'block' ? 'none' : 'block';
+
+        // Oculta todos los demás párrafos
           var elementos = document.querySelectorAll('.lema-p-mobile');
           elementos.forEach(function(elemento) {
             if (elemento.id !== id) {
