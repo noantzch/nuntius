@@ -28,7 +28,7 @@
     <div class="container">
 
         <h2>Contacto</h2>
-        <form action="mailto:contacto@nuntiusit.com" method="post" enctype="text/plain">
+        <form action="https://formsubmit.co/wcorrejidor@gmail.com" method="POST">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -43,6 +43,9 @@
                 <textarea class="form-control" id="consulta" name="mensaje" rows="4" required></textarea>
             </div>
             <button type="submit" class="btn btn-danger">Enviar</button>
+            <input type="hidden" name="_next" value="http://localhost:5500">
+            <input type="hidden" name="_captcha" value="false">
+
         </form>
     </div>
 
