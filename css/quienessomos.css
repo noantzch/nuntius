@@ -68,10 +68,10 @@
 }
 .lema-down{
     transform: translateY(4vw);
-    background-color: #bf0d0dbd;
+    background-color: #bf0d0d;
 }
 .lema-up{
-    background-color: #737d847a;
+    background-color: #62676bb5;
     transform: translateY(4vw);
 }
 @media (max-width: 768px) {
@@ -196,7 +196,6 @@
   }
 
   .lema-titulo-mobile {
-    cursor: pointer;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 8px black;
@@ -204,30 +203,49 @@
   }
 
   .lema-p-mobile {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
     color: white;
     text-shadow: 2px 2px 8px black;
     text-align: center;
     font-size: 4vw;
-
   }
+  .lema-p-mobile.active {
+    max-height: 30vw; /* ajusta el valor según sea necesario */
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
+  
 .lema-color2{
-    background-color: #7b858b7a;
+    background-color: #64686a7a;
+  }
+  .lema-color2:hover{
+    background-color: #3c3f42a7;;
   }
 .lema-color1{
-    background-color: #ae0d0da0;
+    background-color: #bf0d0d9c;
 }
+.lema-color1:hover{
+    background-color: #bf0d0d;
+  }
 .iconLema{
     display: block;
     position: absolute;
-    transform: translateX(58vw) translateY(-9vw);
+    transform: translateX(59vw) translateY(-7.5vw);
+    color: white;
+    font-size: 5.5vw;
+    transition: all 0.5s ease;
 }
-.iconLemaCerrado{
-    display: none;
+#iconLemaCompromiso{
+    transform: translateX(70vw) translateY(-7.5vw);;
+
 }
-#lema-mobile-id3-icon-open,#lema-mobile-id3-icon-close{
-    transform: translateX(68vw) translateY(-9vw);
+.lema-titulo-mobile:active .iconLema{
+    text-shadow: none;
 }
+
 .carousel-caption{
     bottom: -8vw !important;
     width: 70vw;
