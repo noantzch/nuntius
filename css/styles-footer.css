@@ -98,6 +98,7 @@ transition: 0.5s;
 @media (max-width: 700px){
     .footernav ul {
         flex-direction: column;
+        margin-left: -65px;
     }
     
 }
