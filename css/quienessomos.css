@@ -76,7 +76,38 @@
 }
 @media (max-width: 768px) {
     .lemas-container{
-        display: none !important;
+        height: auto;
+        padding: 5vw 0;
+    }
+    .lema h5{
+        font-size: 5vw;
+    }
+    .lema p{
+        font-size: 4vw;
+    }
+    .lema{
+        width: 70vw;
+        height: 60vw;
+        transform: none;
+        padding: 1vw 3vw !important;
+        margin: 4vw 0;
+    }
+    .lema-up.move-up {
+        transform: translateX(4vh);
+      }
+    
+      .lema-down.move-down {
+        transform: translateX(4vh);
+      }
+
+    .lema-down{
+        transform: translateX(-4vw);
+        background-color: #bf0d0d;
+        border-radius: 5% 25% 5% 5%;
+    }
+    .lema-up{
+        background-color: #62676bb5;
+        transform: translateX(-4vw);
     }
 }
 /* nuestro equipo */
@@ -167,14 +198,15 @@
 }
 
 .carousel-caption h5{
-    text-shadow: 3px 3px 9px grey;
-    color: black !important;
+    text-shadow: 3px 3px 15px rgb(255, 255, 255);
+    color: rgb(0, 0, 0) !important;
+    font-size: 5vw;
 }
 
 .carousel-caption p{
-    text-shadow: 3px 3px 9px grey;
-    color: black !important;
-
+    text-shadow: 3px 3px 15px rgb(255, 255, 255);
+    color: rgb(0, 0, 0) !important;
+    font-size: 3.9vw;
 }
 
 /* lemas mobile */
@@ -219,17 +251,13 @@
 }
   
 .lema-color2{
-    background-color: #64686a7a;
+    background-color: #3c3f42a7;
   }
-  .lema-color2:hover{
-    background-color: #3c3f42a7;;
-  }
+
 .lema-color1{
-    background-color: #bf0d0d9c;
-}
-.lema-color1:hover{
     background-color: #bf0d0d;
-  }
+}
+
 .iconLema{
     display: block;
     position: absolute;
@@ -247,13 +275,13 @@
 }
 
 .carousel-caption{
-    bottom: -8vw !important;
+    background-color: #cacaca47;
+    padding: 1vw 1vw !important;
     width: 70vw;
-    transform: translateX(-10vw);
+    bottom: -1vw !important;
+    transform: translateX(-7vw);
+    z-index: 99;
+    border-radius: 20px;
+    backdrop-filter: blur(2px); /
 }
-.carousel-caption p{
-    font-size: 4vw;
-}
-
-
 
