@@ -173,7 +173,7 @@
     left: 0;
     opacity: 0;
     transition: opacity 0.3s;
-    height: 24vw;
+    height: 18vw;
 }
 .card-body h5{
     font-size: 1em;
