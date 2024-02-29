@@ -5,11 +5,11 @@
   },
   "2": {
     "nombre": "Emanuel",
-    "descripcion": "Aquí va una descripción personal que podría ser desde el rol en la empresa hasta el porque gusta trabajar en nuntius, no más de 35/40 palabras no menos de 20 palabras"
+    "descripcion": "Mi nombre es Emanuel Barboza, soy Licenciado en Análisis de Sistemas recibido de la Universidad Nacional de Salta. Actualmente me dedico a ser Analista Programador, soy apasionado a lo relacionado con metodologías agiles y nuevas formas de trabajo para empresas."
   },
   "3": {
     "nombre": "Pablo",
-    "descripcion": "Aquí va una descripción personal que podría ser desde el rol en la empresa hasta el porque gusta trabajar en nuntius, no más de 35/40 palabras no menos de 20 palabras"
+    "descripcion": "Mi nombre es Pablo, soy Lic en Análisis de Sistemas y formo parte de nuntius desde finales del 2020. Mis labores dentro del equipo comenzaron dando soporte a usuarios y al pasar el tiempo pude ir probando diferentes roles y responsabilidades entre los más importantes desarrollador (con Genexus) y analista funcional en diferentes proyectos. Personalmente trabajar dentro del equipo es una experiencia muy enriquecedora ya que los proyectos son muy desafiantes y en los que se aprende de todo un poco."
   },
   "4": {
     "nombre": "Javier",
@@ -17,6 +17,15 @@
   },
   "5": {
     "nombre": "Gabriel",
+    "descripcion": "Mi nombre es Gabriel Ramirez, soy Tec. Programador con titulo en de la Universidad Nacional de Salta (UNSa). Me gusta mucho la naturaleza, pesar, viajar en moto y jugar al futbol. Actualmente cumplo del rol analista programador en la empresa y formandome como DevOp."
+  },
+  "6":{
+    "nombre": "Lucas",
     "descripcion": "Aquí va una descripción personal que podría ser desde el rol en la empresa hasta el porque gusta trabajar en nuntius, no más de 35/40 palabras no menos de 20 palabras"
+  },
+  "7":{
+    "nombre": "Daniel",
+    "descripcion": "Aquí va una descripción personal que podría ser desde el rol en la empresa hasta el porque gusta trabajar en nuntius, no más de 35/40 palabras no menos de 20 palabras"
+
   }
 }
