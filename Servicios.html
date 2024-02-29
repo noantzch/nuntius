@@ -199,55 +199,44 @@
         </div>
     </footer>
     <script>
-        jQuery(document).ready(function() {
+        jQuery(document).ready(function () {
             // Cargar contenido dinámico desde el archivo JSON
-            jQuery.getJSON('Servicios.json', function(data) {
+            jQuery.getJSON('Servicios.json', function (data) {
                 // Recorrer el arreglo de objetos JSON
-                jQuery.each(data, function(index, content) {
-                    // Construir el HTML dinámico para el primer jumbotron
-                    var jumbotron1Html = '<div class="jumbotron jumbotron-fluid feature" id="feature-first">' +
-                                            '<div class="container my-5">' +
-                                                '<div class="row justify-content-between text-center text-md-left">' +
-                                                    '<div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">' +
-                                                        '<h2 class="font-weight-bold">' + content.title + '</h2>' +
-                                                        '<p class="my-4">' + content.text + '</p>' +
-                                                        '<a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>' +
-                                                    '</div>' +
-                                                    '<div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">' +
-                                                        '<img src="' + content.imageUrl + '" alt="Dynamic Image" class="mx-auto d-block">' +
-                                                    '</div>' +
-                                                '</div>' +
-                                            '</div>' +
-                                        '</div>';
-        
-
-
+                jQuery.each(data, function (index, content) {
+                    // Determinar si el índice es impar o par
+                    var isOdd = index % 2 == 0;
+    
+                    // Construir el HTML dinámico para el jumbotron
+                    var jumbotronHtml = '<div class="jumbotron jumbotron-fluid feature" id="feature-' + (isOdd ? 'first' : 'last') + '">' +
+                        '<div class="container">' +
+                        '<div class="row justify-content-between text-center text-md-left">' +
+                        '<div data-aos="' + (isOdd ? 'fade-right' : 'fade-left') + '" data-aos-duration="1000" data-aos-once="true" class="col-md-6 ' + (isOdd ? '' : 'flex-md-last') + '">' +
+                        '<h2 class="font-weight-bold">' + content.title + '</h2>' +
+                        '<p class="my-4">' + content.text + '</p>';
+    
+                    // Verificar si la propiedad "url" existe antes de agregar el enlace
+                    if (content.url) {
+                        jumbotronHtml += '<a href="' + content.url + '" class="btn my-4 font-weight-bold atlas-cta cta-blue" target="_blank">Visitar</a>';
+                    }
+    
+                    jumbotronHtml += '</div>' +
+                        '<div data-aos="' + (isOdd ? 'fade-left' : 'fade-right') + '" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center ' + (isOdd ? '' : 'flex-md-first') + '">' +
+                        '<img src="' + content.imageUrl + '" alt="Dynamic Image" class="mx-auto d-block">' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>';
+    
                     // Agregar el HTML dinámico al contenedor
-                    jQuery('#dynamic-content').append(jumbotron1Html);
-        
-                    // Construir el HTML dinámico para el segundo jumbotron
-                    var jumbotron2Html = '<div class="jumbotron jumbotron-fluid feature" id="feature-last">' +
-                                            '<div class="container">' +
-                                                '<div class="row justify-content-between text-center text-md-left">' +
-                                                    '<div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">' +
-                                                        '<h2 class="font-weight-bold">' + content.title2 + '</h2>' +
-                                                        '<p class="my-4">' + content.text2 + '</p>' +
-                                                        '<a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>' +
-                                                    '</div>' +
-                                                    '<div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">' +
-                                                        '<img src="' + content.imageUrl2 + '" alt="Dynamic Image" class="mx-auto d-block">' +
-                                                    '</div>' +
-                                                '</div>' +
-                                            '</div>' +
-                                        '</div>';
-        
-                    // Agregar el HTML dinámico al contenedor
-                    jQuery('#dynamic-content').append(jumbotron2Html);
+                    jQuery('#dynamic-content').append(jumbotronHtml);
                 });
             });
         });
-        
-        </script>
+    </script>
+    
+    
+    
 
     <!-- AOS -->
     <script src="js/aos.js"></script>
