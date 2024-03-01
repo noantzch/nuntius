@@ -21,9 +21,11 @@
     <link rel="stylesheet" href="./css/styles-navbar.css" />
     <link rel="stylesheet" href="./css/styles-banner.css" />
     <link rel="stylesheet" href="./css/styles-footer.css" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- source script recaptcha google  -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
@@ -71,7 +73,7 @@
         <h2 class="text-white">CONTACTO</h2>
       </div>
     </div>
-
+    <!-- contenedor de formulario -->
     <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -79,6 +81,7 @@
           <div class="mb-50">
             <h3>Tus preguntas seran respondidas</h3>
           </div>
+          <!-- API envio de correos -->
           <form action="https://formsubmit.co/wcorrejidor@gmail.com" method="POST" id="contactForm"
             onsubmit="return validateForm()">
             <div class="form-group mb-3">
@@ -91,14 +94,15 @@
             </div>
             <div class="form-group mb-3">
               <label for="consulta">Consulta</label>
-              <textarea class="form-control" id="consulta" name="mensaje" rows="4" required></textarea>
+              <textarea class="form-control" id="consulta" name="mensaje" rows="4" placeholder="Dudas? Consultas? Información? Escríbenos" required></textarea>
             </div>
+            
             <div class="form-group mb-3">
               <div class="g-recaptcha" data-sitekey="6LfSI4QpAAAAAPUYzmzRWjHqQX00xqRmnq78Uuv8"></div>
-              <div id="error-message" style="color:rgba(210, 101, 101, 0.895)"></div>
+              <div id="error-message" style="color:rgba(247, 5, 5, 0.895)"></div>
             </div>
             <button type="submit" class="btn btn-primary btn-lg btn-block" style="background-color: rgba(191, 14, 13, 1);">Enviar</button>
-            <input type="hidden" name="_next" value="http://localhost:5500" />
+            <input type="hidden" name="_next" value="http://localhost:5500/Contacto.html" />
             <input type="hidden" name="_captcha" value="false" />
           </form>
         </div>
@@ -111,26 +115,37 @@
           <p class="card-text"> <i class="fas fa-map-marker-alt" style="color: rgba(191, 14, 13, 1);"></i> Pje. Anta 1331, A4400 Salta</p>
           <p class="card-text"> <i class="fas fa-phone" style="color: rgba(191, 14, 13, 1);"></i> 011 2398-1685</p>
           <p class="card-text"> <i class="far fa-envelope" style="color: rgba(191, 14, 13, 1);"></i> contacto@nuntiusit.com</p>
+          <input type="hidden" name="_next" value="http://localhost:5500" />
+        <input type="hidden" name="_captcha" value="false" />
         </div>
         
         </div>
       </div>
     </div>
   </div>
-        </div>
+        <!-- </div>
         <input type="hidden" name="_next" value="http://localhost:5500" />
-        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_captcha" value="false" /> -->
       </form>
+
+    <!--  script captcha-->
+      
       <script>
         document
           .getElementById("contactForm")
           .addEventListener("submit", function (event) {
             if (!validateForm()) {
               event.preventDefault(); // Evita que el formulario se envíe si la validación falla
+              alert("Por favor, haga click en 'No soy un robot' para verificar que no eres un robot.");
             }
+            if (!validateForm()) {
+            event.preventDefault();
+            return;
+          }
+            
+            alert("Mensaje enviado con éxito");
           });
       </script>
-
       <script>
         function validateForm() {
           var response = grecaptcha.getResponse();
@@ -160,6 +175,7 @@
     ></script>
   </body>
 
+<!--  footer-->
   <footer>
     <div class="FooterContainer">
       <div class="SocialIcons">
