@@ -162,34 +162,54 @@ button {
 
 }
 
+.TitleH1 {
+    text-align: center; /* Para centrar el texto horizontalmente */
+    margin-top: 50px; /* Ajusta este valor según sea necesario para centrar verticalmente */
+    margin-bottom: 60px;
+}
+
+.TitleH1 h1 {
+    font-size: 36px; /* Tamaño de fuente deseado */
+    color: #333; /* Color del texto */
+    /* Otros estilos de texto, como familia de fuente, peso, etc., según sea necesario */
+}
+
 .slider {
-    width: 100%;
+    width: 75vw;
+    height: auto;
+    margin: auto;
     overflow: hidden;
-    position: relative;
 }
 
-.slide-track {
+.slider .slide-track {
     display: flex;
-    animation: scroll 24s linear infinite;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 15); /* Ajusta el ancho para incluir las imágenes duplicadas */
 }
 
-.slide {
+.slider .slide {
     width: 200px;
-    height: 200px;
+    margin-bottom: 20px;
 }
 
-.slide img {
-    width: 100%;
+.slider .slide img {
+    width: 50%;
 }
+
+
 
 @keyframes scroll {
     0% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-800px); /* Ancho total de todas las imágenes */
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
     }
 }
+
 
 
 
