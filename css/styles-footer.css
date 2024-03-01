@@ -109,6 +109,7 @@ transition: 0.5s;
     width: 100%;
     text-align: center;
     margin: 10px;
-
-
+}
+*{
+    font-family: "Outfit", sans-serif !important;
 }
