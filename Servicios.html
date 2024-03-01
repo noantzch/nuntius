@@ -128,53 +128,90 @@
     <!-- price table -->
     
     <main>
-
-    </div>
-    <section class="slider">
-        <div class="slide-track">
-            <div class="slide"><img src="./images/img/html.png" alt=""></div>
-            <div class="slide"><img src="./images/img/css.png" alt=""></div>
-            <div class="slide"><img src="./images/img/javascript.png" alt=""></div>
-            <!-- Repite las imágenes según sea necesario -->    
-            <div class="slide"><img src="./images/img/ruby.png" alt=""></div>
-            <div class="slide"><img src="./images/img/python.png" alt=""></div>
-            <div class="slide"><img src="./images/img/c.png" alt=""></div>
-            <div class="slide"><img src="./images/img/php.png" alt=""></div>
-            <div class="slide"><img src="./images/img/perl.png" alt=""></div>
-            <div class="slide"><img src="./images/img/java.png" alt=""></div>
+        <div class="TitleH1"><h1>HERRAMIENTAS</h1>
+            </div>
+        <div id="dynamic-content2">
+           
+            <!--<div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="5.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="6.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="7.png" alt="">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="5.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="6.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="7.png" alt="">
+                    </div>
+                </div>
+            </div> -->
         </div>
-    </section>
     
     </main>
 
 
 
     <!-- client -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="./images/img/client-1.png" class="mx-auto d-block">
+    <div id="dynamic-content3">
+        <!--     <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                            <img src="./images/img/client-1.png" class="mx-auto d-block">
+                        </div>
+                        <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                            <img src="./images/img/client-2.png" class="mx-auto d-block">
+                        </div>
+                        <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                            <img src="./images/img/client-3.png" class="mx-auto d-block">
+                        </div>
+                        <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                            <img src="./images/img/client-4.png" class="mx-auto d-block">
+                        </div>
+                        <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                            <img src="./images/img/client-5.png" class="mx-auto d-block">
+                        </div>
+                        <div class="col-sm-4 col-md-2 py-2 align-self-center">
+                            <img src="./images/img/client-6.png" class="mx-auto d-block">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="./images/img/client-2.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="./images/img/client-3.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="./images/img/client-4.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="./images/img/client-5.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="./images/img/client-6.png" class="mx-auto d-block">
-                </div>
-            </div>
+            </div> -->
         </div>
-    </div>
-
   
     <!-- footer -->
     
@@ -235,8 +272,65 @@
         });
     </script>
     
+    <script>
+        jQuery(document).ready(function() {
+            // Cargar contenido dinámico desde el archivo JSON
+            jQuery.getJSON('Herramientas.json', function(data) {
+                // Recorrer el arreglo de objetos JSON
+                jQuery.each(data, function(index, content) {
+                    // Construir el HTML dinámico para el carrusel
+                    var ToolsHtml = '<div class="slider">' + ' <div class="slide-track">' + '  <div class="slide"><img src="' + content.tool1 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool2 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool3 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool4 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool5 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool6 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool7 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool8 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool1 + '""> </div> ' + // Duplica la primera imagen al final
+                        ' <div class="slide"><img src="' + content.tool2 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool3 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool4 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool5 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool6 + '""> </div> ' +
+                        ' <div class="slide"><img src="' + content.tool7 + '""> </div> ' +
+                        '</div>' + // Cierra slide-track
+                        '</div>'; // Cierra slider
     
+                    jQuery('#dynamic-content2').append(ToolsHtml);
+                });
+            });
+        });
+    </script>
     
+<script>
+    jQuery(document).ready(function() {
+        // Cargar contenido dinámico desde el archivo JSON
+        jQuery.getJSON('Clientes.json', function(data) {
+            // Recorrer el arreglo de objetos JSON
+            jQuery.each(data, function(index, content) {
+                // Construir el HTML dinámico para el primer jumbotron
+                var ClientHtml = '<div class="jumbotron jumbotron-fluid">' + ' <div class="container">' + ' <div class="row"> ' + '<div class="col-sm-4 col-md-2 py-2 align-self-center">' +
+                    '<img src="' + content.client1 + '" class="mx-auto d-block"></div>' +
+                    '<div class="col-sm-4 col-md-2 py-2 align-self-center">' +                            
+                '<img src="' + content.client2 + '" class="mx-auto d-block"></div>' +
+                '<div class="col-sm-4 col-md-2 py-2 align-self-center">' +
+                '<img src="' + content.client3 + '" class="mx-auto d-block"></div>' +
+                '<div class="col-sm-4 col-md-2 py-2 align-self-center">' +
+                '<img src="' + content.client4 + '" class="mx-auto d-block"></div>' +
+                '<div class="col-sm-4 col-md-2 py-2 align-self-center">' +        
+                '<img src="' + content.client5 + '" class="mx-auto d-block"></div>' +
+                '<img src="' + content.client6 + '" class="mx-auto d-block"></div>'
+                
+
+                    jQuery('#dynamic-content3').append(ClientHtml);
+
+
+                });
+        });
+    });
+</script>
+
 
     <!-- AOS -->
     <script src="js/aos.js"></script>
