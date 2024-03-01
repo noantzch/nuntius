@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/styles-navbar.css">
     <link rel="stylesheet" href="./css/styles-banner.css">
     <link rel="stylesheet" href="./css/styles-footer.css">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -45,10 +45,6 @@
   <!--NavBar-->
 
 
-
-
-
-
 <!--  banner y título-->    
     <div class="banner text-white">
         <div class="filter-back">
@@ -65,7 +61,7 @@
             Expertos en IT comprometidos con la excelencia, ofrecemos servicios vanguardistas para alcanzar sus metas digitales.
         </p>
     </div>
-<!-- LEMAS desktop -->
+<!-- LEMAS-->
     <div class="lemas-container flex-wrap justify-content:center align-content:center ">
         <div class="lema lema-up">
             <h5>Misión</h5>
@@ -84,31 +80,6 @@
             <p>Nuestro mayor logro es su satisfacción. En cada avance tecnológico, nos esforzamos por superar expectativas y convertir clientes en socios satisfechos</p>
         </div>
     </div>
-    
-<!--  OPCION lemas mobile click sobre cada lema -->
-<!--     <div class="lemas-container-padre-mobile">
-        <div class="lema-container-mobile ">
-            <div class="lema-mobile lema-color1">
-                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id1')">Misión<span class="iconLema">↕</span></h4>
-                <p class="lema-p-mobile" id="lema-mobile-id1">Facilitar la transformación digital de nuestros clientes, proporcionando soluciones tecnológicas innovadoras y personalizadas que impulsen su éxito empresarial y competitividad en el mercado global.</p>
-            </div>
-        
-            <div class="lema-mobile lema-color2">
-                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id2')">Visión<span class="iconLema">↕</span></h4>
-                <p class="lema-p-mobile" id="lema-mobile-id2">Ser líderes reconocidos en el sector de tecnología, destacando por nuestra excelencia en servicio, compromiso con la calidad y contribución significativa a la evolución positiva de la sociedad a través de la innovación.</p>
-            </div>
-        
-            <div class="lema-mobile lema-color1">
-                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id3')">Compromiso<span  id="iconLemaCompromiso" class="iconLema">↕</span></h4>
-                <p class="lema-p-mobile" id="lema-mobile-id3">Conectamos compromiso con resultados, construyendo relaciones sólidas y duraderas basadas en la confianza mutua3</p>
-            </div>
-            
-            <div class="lema-mobile lema-color2">
-                <h4 class="lema-titulo-mobile" onclick="mostrarOcultar('lema-mobile-id4')">Logros<span  class="iconLema">↕</span></h4>
-                <p class="lema-p-mobile" id="lema-mobile-id4">Nuestro mayor logro es su satisfacción. En cada avance tecnológico, nos esforzamos por superar expectativas y convertir clientes en socios satisfechos</p>
-            </div>
-        </div>
-    </div> -->
 
 <!-- titulo nuestro equipo -->
     <h4 class="nuestroequipotitulo">Nuestro Equipo</h4>
@@ -274,23 +245,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- script lemas mobile -->
-    <script>
-        function mostrarOcultar(id) {
-        var contenido = document.getElementById(id);
-        var elementos = document.querySelectorAll('.lema-p-mobile');
-
-        elementos.forEach(function (elemento) {
-            if (elemento.id !== id) {
-                elemento.classList.remove('active');
-            }
-        });
-
-        contenido.classList.toggle('active');
-    }
-        
-
-    </script>
 
 </body>
 </html>

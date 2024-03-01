@@ -1,12 +1,12 @@
 
 .quienes-somos-info{
-    padding: 8vw 0 !important;
+    padding: 4vw 0 !important;
     background: rgb(240,240,240);
     background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(255,252,252,1) 5%);
 }
 .quienes-somos-info p{
-    font-size: 1.5vw;
-    padding: 1vw 14vw !important;
+    font-size: 1.6vw;
+    padding: 1vw 10vw !important;
 }
 @media (max-width: 768px) {
    
