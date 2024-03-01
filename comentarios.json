@@ -1,0 +1,20 @@
+[
+    {
+    "nombre": "Juan Carlos",
+    "rol": "Contador de AliExpress",
+    "comentario": "No tengo dudas de volver a trabajar con Nuntius cuando se trate de decisiones IT",
+    "imgUrl": "./images/juanito.jpg"
+    },
+    {
+    "nombre": "Ana Rodríguez",
+    "rol": "Desarrolladora  en Google",
+    "comentario": "Nuntius ha demostrado ser un socio confiable en el ámbito de soluciones tecnológicas. Su profesionalismo y experiencia son invaluables para nuestros proyectos.",
+    "imgUrl": "./images/ana.jpg"
+    },
+    {
+    "nombre": "María Pérez",
+    "rol": "Gerente de Marketing en Amazon",
+    "comentario": "Trabajar con Nuntius fue una experiencia excepcional. Su enfoque innovador y compromiso con la excelencia han contribuido significativamente al éxito de nuestras campañas publicitarias.",
+    "imgUrl": "./images/maria.jpg"
+    }
+  ]
