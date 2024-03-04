@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
     
 <body>
@@ -48,42 +46,43 @@
     <!--Carrousel start-->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active carousel-img-size" data-bs-interval="3000">
-          <img src="./Images/indexImg/job2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="animate__animated animate__fadeInUpBig">First slide label</h3>
-            <p class="animate__animated animate__fadeInUpBig">Some representative placeholder content for the first slide.</p>
+          <div class="carousel-item active carousel-img-size" data-bs-interval="5000">
+              <img src="./Images/indexImg/job2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block text-center align-middle">
+                  <h2 class="fs-1 animate__animated animate__fadeInUpBig">Second slide label</h2>
+                  <p class="fs-4 animate__animated animate__fadeInUpBig">Some representative placeholder content for the firts slide.</p>
+              </div>
           </div>
-        </div>
-        <div class="carousel-item carousel-img-size" data-bs-interval="3000">
-          <img src="./Images/indexImg/job1.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Second slide label</h3>
-            <p>Some representative placeholder content for the second slide.</p>
+          <div class="carousel-item carousel-img-size" data-bs-interval="4000">
+              <img src="./Images/indexImg/job1.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block text-center align-middle">
+                  <h2>Second slide label</h2>
+                  <p>Some representative placeholder content for the second slide.</p>
+              </div>
           </div>
-        </div>
-        <div class="carousel-item carousel-img-size" data-bs-interval="3000" >
-          <img src="./Images/indexImg/job1.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Third slide label</h3>
-            <p>Some representative placeholder content for the third slide.</p>
+          <div class="carousel-item carousel-img-size" data-bs-interval="4000">
+              <img src="./Images/indexImg/job1.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block text-center align-middle">
+                  <h2>Third slide label</h2>
+                  <p>Some representative placeholder content for the third slide.</p>
+              </div>
           </div>
-        </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
       </button>
-    </div>
+  </div>
+  
      <!--Carrousel end-->
   </header>
 
@@ -91,18 +90,60 @@
     <div class="card-header">
     </div>
     <div class="card-body">
-      <h5 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit cum at quis, necessitatibus pariatur illum dolore placeat accusantium optio facilis fuga provident sint praesentium, magni neque delectus nihil voluptas amet.</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellendus fuga minus, velit modi recusandae ipsum, voluptates ipsam ullam praesentium harum expedita sed quaerat, veritatis magni quas quasi autem voluptas.</p>
+      <h5 class="fs-1 card-title">Haciendo Posible tu Éxito:</h5>
+      <p class="fs-5 card-text">En cada línea de código, en cada consulta estratégica, estamos trabajando incansablemente para hacer posible tu éxito. Ya sea que busques optimizar procesos, implementar nuevas tecnologías o llevar tus ideas a la realidad digital, en Nuntius, estamos aquí para hacerlo posible!.</p>
     </div>
   </div>
 
 <!--Timeline Start-->
 <div class="container" id="timeline-container">
   </div>
-
- 
-
 <!-- Timeline end -->
+
+
+<!-- Clientes start -->
+<div class="container mt-4">
+  <div id="cardContainer" class="row"></div>
+</div>
+
+
+<script>
+  const jsonFilePath = './comentarios.json';
+  
+  // Función para generar la tarjeta Bootstrap dinámicamente
+  function generateCard(data, container) {
+    $.each(data, function(index, item) {
+      const card = $('<div>').addClass('card mb-3 m-3').css('width', '18rem');
+      const cardBody = $('<div>').addClass('card-body');
+      $('<img>').addClass('img-comentario').attr('src', item.imgUrl).appendTo(cardBody);
+      $('<p>').addClass('card-text text-center font-italic').text(item.comentario).appendTo(cardBody);
+      $('<h5>').addClass('card-title text-center').text(item.nombre).appendTo(cardBody);
+      $('<h6>').addClass('card-subtitle mb-2 text-muted text-center').text(item.rol).appendTo(cardBody);
+      $('<p>').addClass('card-text text-center').text("⭐⭐⭐⭐⭐").appendTo(cardBody);
+      cardBody.appendTo(card);
+      card.appendTo(container);
+    });
+  }
+
+  // Función para cargar el JSON y generar las tarjetas
+  function loadAndGenerateCards() {
+    const cardContainer = $('#cardContainer');
+
+    // Realiza una solicitud HTTP para cargar el archivo JSON usando jQuery
+    $.getJSON(jsonFilePath, function(jsonData) {
+      console.log('JSON cargado exitosamente:', jsonData);
+      generateCard(jsonData, cardContainer);
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+      console.error('Error al cargar el JSON:', textStatus, errorThrown);
+    });
+  }
+
+  // Llama a la función para cargar y generar las tarjetas al cargar la página
+  $(document).ready(function() {
+    loadAndGenerateCards();
+  });
+</script>
+<!-- Clientes end -->
 
     <!-- footer -->
     
@@ -133,7 +174,7 @@
 
 
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="./js/script.js"></script>
 <script src="timeline.js"></script>

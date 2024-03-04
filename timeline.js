@@ -1,29 +1,24 @@
 // Datos de la timeline
 const timelineData = [
     {
-        year: "First Year",
-        experience: "Some work experience",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
+        year: "Timeline: pasos a seguir",
+        description: "Estos pasos son más que un proceso; son una asociación colaborativa que garantiza que tu visión se materialice de manera efectiva. Desde la idea inicial hasta el lanzamiento, estamos comprometidos a hacer posible cada paso del camino."
     },
     {
-        year: "Second Year",
-        experience: "Some work experience",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
+        year: "Exploración de Ideas - Escuchamos tu Visión",
+        description: "En esta fase inicial, nos sumergimos en tus ideas y necesidades. Nos reunimos contigo para comprender a fondo tu visión, identificar desafíos y establecer los objetivos de desarrollo. Tu perspectiva es fundamental, y esta etapa sienta las bases para el éxito de tu proyecto."
     },
     {
-        year: "Third Year",
-        experience: "Some work experience",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
+        year: "Análisis y Soluciones - Reuniones Estratégicas para Definir Problemas y Soluciones",
+        description: "Aquí nos sumergimos en el análisis detallado. Identificamos los desafíos específicos que enfrentas y colaboramos en la búsqueda de las soluciones más efectivas. A través de reuniones estratégicas, definimos el camino a seguir y diseñamos un plan de acción claro."
     },
     {
-        year: "Third Year",
-        experience: "Some work experience",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
+        year: "Desarrollo en Acción - Coordinación y Desarrollo Activo",
+        description: "En esta fase, coordinamos estrechamente contigo para asegurarnos de que estemos en línea con tus expectativas. Realizamos reuniones periódicas para mostrarte avances tangibles, recopilamos tus comentarios y ajustamos el curso según sea necesario. Este paso es crucial para garantizar que el desarrollo refleje con precisión tus necesidades."
     },
     {
-        year: "Third Year",
-        experience: "Some work experience",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
+        year: "Lanzamiento Exitoso - De Desarrollo a Producción",
+        description: "Una vez completado el desarrollo y coordinado con tu aprobación, llevamos la solución a producción. Este es el emocionante paso hacia el lanzamiento exitoso. Desde aquí, comienzas a experimentar los beneficios de la solución en acción, marcando el inicio de un nuevo capítulo de éxito digital."
     },
 
     // Agrega más datos de la timeline según sea necesario
