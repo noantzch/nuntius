@@ -23,7 +23,13 @@ form {
     display: flex;
     align-items: center; 
 }
+.fas{
+    font-family: "Font Awesome 6 Free" !important;
+}
+.far{
+    font-family: "Font Awesome 6 Free" !important;
 
+}
 .input-group label {
     width: 100px; 
     font-weight: bold;
@@ -65,7 +71,7 @@ footer{
     background-color: white;
     margin: 10px;
     border-radius: 50%;
-
+    
 }
 
 
