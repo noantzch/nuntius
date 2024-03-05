@@ -22,7 +22,7 @@
    <!--NavBar-->
    <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img id="logo" src="../images/Logo/logo_normal_corto.png" alt="logo"></a>
+    <a class="navbar-brand" href="index.html"><img id="logo" src="./Images/Logo/logo_normal_corto.png" alt="logo"></a>
     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -143,8 +143,8 @@
     jQuery.getJSON('../lista_equipo.json', function(data) {
         jQuery.each(data, function(key, value) {
            // Construir las rutas de las imágenes
-           var imgPathA = `./images/fotosEquipo/${key}_a.jpg`;
-            var imgPathB = `./images/fotosEquipo/${key}_b.jpg`;
+           var imgPathA = `./Images/fotosEquipo/${key}_a.jpg`;
+            var imgPathB = `./Images/fotosEquipo/${key}_b.jpg`;
 
             // Crear el HTML para cada tarjeta con las imágenes dinámicas
             var cardHtml = `
@@ -183,7 +183,7 @@
 
                 jQuery.each(data, function(key, value) {
                     // Construir la ruta de la imagen
-                    var imgPath = `./images//fotosEquipo/${key}_a.jpg`;
+                    var imgPath = `./Images//fotosEquipo/${key}_a.jpg`;
 
                     // Construir el HTML para cada ítem del carrusel
                     var carouselItemHtml = `
