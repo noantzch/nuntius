@@ -305,3 +305,11 @@
     position: relative;
     left: 10vw;
 }
+.font-weight-bold{
+    font-size: 3vw !important;
+}
+@media (max-width: 768px) {
+    .font-weight-bold{
+        font-size: 5vw !important;
+    } 
+}

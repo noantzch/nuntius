@@ -122,7 +122,7 @@
   // Función para generar la tarjeta Bootstrap dinámicamente
   function generateCard(data, container) {
     $.each(data, function(index, item) {
-      const card = $('<div>').addClass('card mb-3 m-3').css('width', '18rem');
+      const card = $('<div>').addClass('card mb-3 m-3 card-comentario').css('width', '18rem');
       const cardBody = $('<div>').addClass('card-body');
       $('<img>').addClass('img-comentario').attr('src', item.imgUrl).appendTo(cardBody);
       $('<p>').addClass('card-text text-center font-italic').text(item.comentario).appendTo(cardBody);
