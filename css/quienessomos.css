@@ -30,7 +30,9 @@
     opacity: 0.8;
     background: linear-gradient(135deg, #d5d5d555 25%, transparent 25%) -14px 0/ 28px 28px, linear-gradient(225deg, #d5d5d5 25%, transparent 25%) -14px 0/ 28px 28px, linear-gradient(315deg, #d5d5d555 25%, transparent 25%) 0px 0/ 28px 28px, linear-gradient(45deg, #d5d5d5 25%, #ffffff 25%) 0px 0/ 28px 28px;
 }
-
+.font-weight-bold{
+    font-size: 3rem !important;
+}
 .lema{
     display: flex;
     flex-direction: column;
@@ -159,6 +161,8 @@
     height: 22vw;
     width: 100%;
     transition: opacity 0.3s; 
+    padding: 1.5rem !important;
+    border-radius: 2.2rem !important;
 }
 .img-container {
     position: relative;
@@ -174,6 +178,8 @@
     opacity: 0;
     transition: opacity 0.3s;
     height: 22vw;
+    padding: 1.5rem !important;
+    border-radius: 2.2rem !important;
 }
 .card-body h5{
     font-size: 1em;
@@ -186,15 +192,18 @@
 .carousel-item-left img{
     width: 80vw !important;
     max-width: 80vw !important;
+    border-radius: 2.2rem !important;
 }
 .carousel-item img{
     width: 80vw !important;
     max-width: 80vw !important;
+    border-radius: 2.2rem !important;
 }
 .carousel-item-next img{
     width: 80vw !important;
     max-width: 80vw !important;
     transform: translateX(2vw);
+    border-radius: 2.2rem !important;
 }
 
 .carousel-caption h5{
@@ -285,3 +294,14 @@
     backdrop-filter: blur(2px); /
 }
 
+
+.btn-card{
+    background-color: #bf0d0d;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    position: relative;
+    left: 10vw;
+}

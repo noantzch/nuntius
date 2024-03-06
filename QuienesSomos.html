@@ -22,7 +22,7 @@
    <!--NavBar-->
    <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img id="logo" src="../images/Logo/logo_normal_corto.png" alt="logo"></a>
+    <a class="navbar-brand" href="index.html"><img id="logo" src="./Images/Logo/logo_normal_corto.png" alt="logo"></a>
     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -38,7 +38,7 @@
             <a class="nav-link" href="./Servicios.html">Servicios</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./Contacto.html">Contacto</a>
+            <a class="nav-link" href="./contacto.html">Contacto</a>
         </li>
         </ul>
     </div>
@@ -50,7 +50,7 @@
 <!--  banner y título-->    
     <div class="banner text-white">
         <div class="filter-back">
-            <h2>Quienes Somos</h2>
+            <h2>QUIENES SOMOS</h2>
         </div>
     </div>
 <!-- frase e info SUBTITULO -->
@@ -62,10 +62,6 @@
             <br/> <br/>
             Nos especializamos en crear soluciones informáticas  <br/>
              a medida que impulsan la eficiencia, la escalabilidad y el éxito de nuestros clientes.
-            <br/> <br/>
-            Nos dedicamos a transformar tus ideas en software funcional, utilizando tecnologías de vanguardia 
-            <br/> 
-            y las mejores prácticas de desarrollo para asegurar soluciones robustas y a la medida de tus necesidades.
             <br/> <br/>
             Si buscas un equipo de desarrollo de software comprometido con la calidad, la innovación y la satisfacción del cliente, estás en el lugar correcto.
             <br/>
@@ -138,35 +134,62 @@
 
 <!-- scripts -->
 <!-- script para lista y fotos de equipo desktop -->
-    <script>
+<script>
     jQuery(document).ready(function() {
-    jQuery.getJSON('../lista_equipo.json', function(data) {
-        jQuery.each(data, function(key, value) {
-           // Construir las rutas de las imágenes
-           var imgPathA = `./images/fotosEquipo/${key}_a.jpg`;
-            var imgPathB = `./images/fotosEquipo/${key}_b.jpg`;
+        jQuery.getJSON('../lista_equipo.json', function(data) {
+            jQuery.each(data, function(key, value) {
+                // Construir las rutas de las imágenes
+                var imgPathA = `./Images/fotosEquipo/${key}_a.jpg`;
+                var imgPathB = `./Images/fotosEquipo/${key}_b.jpg`;
 
-            // Crear el HTML para cada tarjeta con las imágenes dinámicas
-            var cardHtml = `
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="img-container">
-                            <img src="${imgPathA}" class="card-img-top" alt="Miembro del equipo ${value.nombre}">
-                            <img src="${imgPathB}" class="hover-img" alt="Otra imagen de ${value.nombre}">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">${value.nombre}</h5>
-                            <p class="card-text">${value.descripcion}</p>
+                // Crear el HTML para cada tarjeta con las imágenes dinámicas
+                var cardHtml = `
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="img-container">
+                                <img src="${imgPathA}" class="card-img-top" alt="Miembro del equipo ${value.nombre}">
+                                <img src="${imgPathB}" class="hover-img" alt="Otra imagen de ${value.nombre}">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">${value.nombre}</h5>
+                                <p class="truncate-description">${(value.descripcion.split(' ').slice(0, 19).join(' ')).trim()}
+                                    <span class="textocard" id="texto-expandible-${key}-puntos">...</span>
+                                    <span class="textocard d-none" id="texto-expandible-${key}">
+                                        ${value.descripcion.split(' ').slice(19).join(' ')}
+                                    </span>
+                                    </p>
+                                <button class="btn-card" id="btn-card-${key}" onclick="toggleDescription(${key})">Leer más</button>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-            `;
-            jQuery('#equipo-container').append(cardHtml);
+                `;
+                jQuery('#equipo-container').append(cardHtml);
+            });
         });
     });
-});
 
-    </script>
+    function toggleDescription(key) {
+        var btn = jQuery(`#btn-card-${key}`);
+        var textContainer = jQuery(`#texto-expandible-${key}`);
+        var textContainerPuntos = jQuery(`#texto-expandible-${key}-puntos`);
+
+        if (textContainer.hasClass('d-none')) {
+            // Mostrar el texto
+            textContainer.removeClass('d-none');
+            btn.text('Leer menos');
+            textContainerPuntos.addClass('d-none')
+        } else {
+            // Ocultar el texto
+            textContainer.addClass('d-none');
+            btn.text('Leer más');
+            textContainerPuntos.removeClass('d-none')
+        }
+    }
+</script>
+
+
+
 <!-- script para lista y fotos de equipo mobile -->
     <script>
         jQuery(document).ready(function() {
@@ -183,7 +206,7 @@
 
                 jQuery.each(data, function(key, value) {
                     // Construir la ruta de la imagen
-                    var imgPath = `./images//fotosEquipo/${key}_a.jpg`;
+                    var imgPath = `./Images//fotosEquipo/${key}_a.jpg`;
 
                     // Construir el HTML para cada ítem del carrusel
                     var carouselItemHtml = `
