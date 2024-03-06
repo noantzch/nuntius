@@ -1,10 +1,6 @@
 // Datos de la timeline
 const timelineData = [
     {
-        year: "Timeline: pasos a seguir",
-        description: "Estos pasos son más que un proceso; son una asociación colaborativa que garantiza que tu visión se materialice de manera efectiva. Desde la idea inicial hasta el lanzamiento, estamos comprometidos a hacer posible cada paso del camino."
-    },
-    {
         year: "Exploración de Ideas - Escuchamos tu Visión",
         description: "En esta fase inicial, nos sumergimos en tus ideas y necesidades. Nos reunimos contigo para comprender a fondo tu visión, identificar desafíos y establecer los objetivos de desarrollo. Tu perspectiva es fundamental, y esta etapa sienta las bases para el éxito de tu proyecto."
     },
