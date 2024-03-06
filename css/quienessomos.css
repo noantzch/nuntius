@@ -186,8 +186,28 @@
     text-align: center;
 }
 .card-body p{
-    font-size: 1em;
+    font-size: 1.3vw !important;
+    max-height: 10vw !important;
+        overflow-y: auto !important;
 }
+
+/* Estilo para la barra de desplazamiento específica dentro de .card-body */
+.card-body  p::-webkit-scrollbar {
+    width: 0.4vw; /* Ancho de la barra de desplazamiento */
+  }
+  
+  .card-body  p::-webkit-scrollbar-thumb {
+    background-color:#bf0d0d7d; /* Color del pulgón */
+    border-radius: 5px; /* Bordes redondeados del pulgón */
+  }
+  
+  .card-body  p::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color del fondo de la barra de desplazamiento */
+  }
+  .card-body p::-webkit-scrollbar-thumb:hover {
+    background-color:#bf0d0d /* Cambiar el color del pulgar al pasar el ratón sobre él */
+  }
+  
 
 .carousel-item-left img{
     width: 80vw !important;

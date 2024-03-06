@@ -135,9 +135,9 @@
 <!-- scripts -->
 <!-- script para lista y fotos de equipo desktop -->
 <script>
-    jQuery(document).ready(function() {
-        jQuery.getJSON('../lista_equipo.json', function(data) {
-            jQuery.each(data, function(key, value) {
+    jQuery(document).ready(function () {
+        jQuery.getJSON('../lista_equipo.json', function (data) {
+            jQuery.each(data, function (key, value) {
                 // Construir las rutas de las imágenes
                 var imgPathA = `./Images/fotosEquipo/${key}_a.jpg`;
                 var imgPathB = `./Images/fotosEquipo/${key}_b.jpg`;
@@ -152,14 +152,9 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">${value.nombre}</h5>
-                                <p class="truncate-description">${(value.descripcion.split(' ').slice(0, 19).join(' ')).trim()}
-                                    <span class="textocard" id="texto-expandible-${key}-puntos">...</span>
-                                    <span class="textocard d-none" id="texto-expandible-${key}">
-                                        ${value.descripcion.split(' ').slice(19).join(' ')}
-                                    </span>
-                                    </p>
-                                <button class="btn-card" id="btn-card-${key}" onclick="toggleDescription(${key})">Leer más</button>
-
+                                <p id="texto-expandible-${key}">
+                                    ${value.descripcion}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -168,24 +163,6 @@
             });
         });
     });
-
-    function toggleDescription(key) {
-        var btn = jQuery(`#btn-card-${key}`);
-        var textContainer = jQuery(`#texto-expandible-${key}`);
-        var textContainerPuntos = jQuery(`#texto-expandible-${key}-puntos`);
-
-        if (textContainer.hasClass('d-none')) {
-            // Mostrar el texto
-            textContainer.removeClass('d-none');
-            btn.text('Leer menos');
-            textContainerPuntos.addClass('d-none')
-        } else {
-            // Ocultar el texto
-            textContainer.addClass('d-none');
-            btn.text('Leer más');
-            textContainerPuntos.removeClass('d-none')
-        }
-    }
 </script>
 
 
