@@ -239,97 +239,6 @@ button {
 }
 
 
-
-
-
-/**** FOOTER ***/
-
-footer{
-
-    background-color: black;
-}
-
-.FooterContainer {
-    width: 100%;
-    padding: 70px 30px 20px;
-}
-
-.SocialIcons {
-    display: flex;
-    justify-content: center;
-}
-
-.SocialIcons a{
-    text-decoration: none;
-    padding: 10px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 50%;
-
-}
-
-
-.SocialIcons a i{
-font-size: 2em;
-color: black;
-opacity: 0.9;
-
-}
-/* Add margin to create space between links */
-.SocialIcons a:hover {
-    background-color: black;
-    transition: 0.5s;
-    
-}
-
-.SocialIcons a:hover i{
-color: white;
-transition: 0.5s;
-    
-}
-
-.footernav {
-
-    margin: 30px 0;
-
-}
-
-.footernav ul{
-
-    display: flex;
-    list-style-type: none;
-
-}
-
-.footernav ul li a{
-
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
-
-}
-
-.footernav ul li a:hover{
-
-    opacity: 1;
-
-}
-
-.Ft{
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-
-}
-
-.Ft p{
-    color: white;
-
-}
-
 .designer{
     opacity: 0.7;
     text-transform: uppercase;
@@ -337,24 +246,6 @@ transition: 0.5s;
     font-weight: 400;
     margin: 0px 5px;
 }
-
-
-@media (max-width: 700px){
-    .footernav ul {
-        flex-direction: column;
-        margin-left: -65px;
-    }
-    
-}
-
-.footernav ul li{
-    width: 100%;
-    text-align: center;
-    margin: 10px;
-
-
-}
-
 
 
 /********** RWD **********/
