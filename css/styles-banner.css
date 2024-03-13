@@ -1,12 +1,16 @@
 .banner{
-    background-image: url("../images/quienessomosportada.jpg");
+    background-image: url("../Images/quienessomosportada.jpg");
     background-size:cover;
-    height: 22vw;
+    height: 29vw;
 }
 .filter-back{
     width: 100%;
     height: 100%;
-    background-color: rgba(151, 150, 150, 0.571);
+    background-color: rgba(229, 229, 229, 0.719);
+}
+body.dark-mode .filter-back{
+    background-color: rgba(28, 28, 28, 0.571);
+
 }
 .banner h2{
     height: 100%;

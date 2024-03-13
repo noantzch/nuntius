@@ -9,6 +9,10 @@
     background-color: #f9f9f9;
 }
 
+body.dark-mode .container{
+    background: black;
+}
+
 h2 {
     font-size: 24px;
     color: #333;
@@ -50,3 +54,36 @@ textarea {
     vertical-align: top; 
 }
 
+
+    .mapouter {
+        position: relative;
+        text-align: right;
+        height: 50vh; /* 50% del alto del viewport */
+        max-width: 100%; /* Para asegurar que no sobrepase el ancho del contenedor padre */
+        border: solid 2px black;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 50vh; /* 50% del alto del viewport */
+        max-width: 100%; /* Para asegurar que no sobrepase el ancho del contenedor padre */
+        border: solid 2px black;
+    }
+
+    @media (min-width: 768px) {
+        /* Estilos específicos para dispositivos con un ancho de pantalla de al menos 768px */
+        .mapouter {
+            height: 500px; /* Tamaño fijo para dispositivos más grandes */
+        }
+
+        .gmap_canvas {
+            height: 500px; /* Tamaño fijo para dispositivos más grandes */
+        }
+    }
+
+    .dark-mode .mapouter,
+    .dark-mode .gmap_canvas {
+        border-color: var(--border-color-dark);
+        background-color: var(--background-color-dark);
+    }

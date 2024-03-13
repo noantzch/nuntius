@@ -3,6 +3,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
 
+
+
+body.dark-mode .Servicios p {
+    color: var(--text-color-dark);
+}
+
+
 h2 {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -30,7 +37,9 @@ button {
 
 .jumbotron {
     margin-bottom: 0 !important;
+    
 }
+
 
 .atlas-cta {
     border-radius: 22px !important;
@@ -97,13 +106,26 @@ button {
     max-width: 480px;
 }
 
+/* Estilos para el modo claro */
 #feature-first {
-    background: linear-gradient(168deg, #ffffff 55%, #ffffff 0);
+    background: linear-gradient(168deg, #ffffff 55%, #ffffff);
 }
 
 #feature-last {
     background: white;
 }
+
+/* Estilos para el modo oscuro */
+.dark-mode #feature-first {
+    background: linear-gradient(168deg, #000000 55%, rgb(13, 13, 63) 0);
+    color: var(--text-color-dark);
+}
+
+.dark-mode #feature-last {
+    background: #000000;
+    color: var(--text-color-dark);
+}
+
 
 /********** price table **********/
 #price-table {

@@ -1,35 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 *{
-   font-family: "Outfit", sans-serif;
+   font-family: "Outfit", sans-serif !important;
    font-optical-sizing: auto;
-   font-weight: 400;
+   font-weight: 400 !important;
    font-style: normal;
+}
+
+
+/*dark theme*/
+
+:root {
+   --text-color-light: #000;
+   --bg-color-light: #fff;
+   --text-color-dark: #fff;
+   --bg-color-dark: #000;
+ }
+ 
+ body {
+   color: var(--text-color-light);
+   background-color: var(--bg-color-light);
+ }
+ 
+ body.dark-mode {
+   color: var(--text-color-dark);
+   background-color: var(--bg-color-dark);
+ }
+
+ body.dark-mode .card {
+   color: var(--text-color-dark);
+   background-color: var(--bg-color-dark);
+ }
+ body.dark-mode .timeline-content p{
+   color: #fff;
+ }
+
+ body.dark-mode .navbar {
+   background-color: var(--bg-color-dark);
+   color: var(--text-color-dark);
+ }
+
+ body.dark-mode .navbar a {
+   color: var(--text-color-dark);
+ }
+ body.dark-mode .navbar .nav-link {
+   color: var(--text-color-dark);
+ }
+ body.dark-mode .card-text {
+   color: var(--text-color-dark) /* Color del texto */
 }
 
 
 
 
 /*NavBar blanca al hacer scroll*/
-.navbar {
+/* navbar comentado para que no se aplique al navbar.js */
+
+/* .navbar {
     transition: background-color 0.3s ease-in-out;
   }
   
   .navbar.transparent {
-    background-color: transparent !important;
+    background-color: transparent;
   }
   
   .navbar.white {
-    background-color: #fff !important;
+    background-color: #fff ;
   }
 
-  /*NavBar links subrayado negro*/
+  .navbar a {
+   color: var(--bg-color-dark);
+ }
   .navbar-nav .nav-link {
     transition: border-color 0.3s ease-in-out;
   }
   
   .navbar-nav .nav-link:hover {
     border-bottom: 2px solid black;
-  }
+  } */
+
 
 /*Carrousel*/
 
@@ -55,24 +103,30 @@
 
 
 /*Cards clientes*/
-.card{
-   height: 22rem;
-}
-.card-body{
+
+.card-body.clientes{
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
+   height: 30rem; 
 }
 .row{
    align-items: center;
    justify-content: center;
 }
-.img-comentario{
-   width: 5rem;
-   height: 5rem;
-   border-radius: 100%;
+.card-text {
+   font-size: 16px;
+   color: var(--bg-color-dark); /* Color del texto */
 }
+.img-comentario{
+   width: 100px;  
+   height: 100px;
+   border-radius: 50%; 
+   object-fit: cover;  
+   margin-bottom: 10px;
+}
+
 
 /*TimeLine*/
 #card-timeline{
@@ -83,7 +137,7 @@
  h1 {
     text-align: center;
     font-weight: 300;
-    color: #777
+    color: var(--bg-color-dark)
  }
  
  h1 span {
@@ -110,12 +164,8 @@
 }
  
 .timeline-block {
-   width: -webkit-calc(50% + 8px);
-   width: -moz-calc(50% + 8px);
+
    width: calc(50% + 8px);
-   display: -webkit-box;
-   display: -webkit-flex;
-   display: -moz-box;
    display: flex;
    -webkit-box-pack: justify;
    -webkit-justify-content: space-between;
@@ -169,7 +219,6 @@
     color: #000000;
  }
  
- 
  @media screen and (max-width: 768px) {
    #timeline-container:before {
       left: 8px;
@@ -189,5 +238,5 @@
    }
 }
  .card-comentario{
-   height: 39vw !important;
+   height: auto !important;
 } 

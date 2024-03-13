@@ -2,10 +2,8 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Servicios</title>
     <meta name="description" content="Free bootstrap template Atlas">
-    <link rel="icon" href="img/images.png" sizes="32x32" type="image/png">
     <!-- custom.css -->
     <link rel="stylesheet" href="./css/custom.css">
     <!-- bootstrap.min.css -->
@@ -30,8 +28,10 @@
 </head>
 
 <header>
- <!--NavBar-->
- <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <div id="navbar"></div>
+    <!--NavBar-->
+ <!--nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
     <a class="navbar-brand" href="index.html"><img id="logo" src="./Images/Logo/logo_normal_corto.png" alt="logo"></a>
     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
     </div>
     </div>
   </nav>
-  <!--NavBar-->
+  <!NavBar-->
 </header>
 
 
@@ -130,7 +130,7 @@
     <!-- price table -->
     
     <main>
-        <div class="TitleH1"><h1>HERRAMIENTaS</h1>
+        <div class="TitleH1"><h1>HERRAMIENTAS</h1>
             </div>
         <div id="dynamic-content2">
            
@@ -240,7 +240,7 @@
     <script>
         jQuery(document).ready(function () {
             // Cargar contenido dinámico desde el archivo JSON
-            jQuery.getJSON('Servicios.json', function (data) {
+            jQuery.getJSON('./JSON/Servicios.json', function (data) {
                 // Recorrer el arreglo de objetos JSON
                 jQuery.each(data, function (index, content) {
                     // Determinar si el índice es impar o par
@@ -256,7 +256,7 @@
     
                     // Verificar si la propiedad "url" existe antes de agregar el enlace
                     if (content.url) {
-                        jumbotronHtml += '<a href="' + content.url + '" class="btn my-4 font-weight-bold atlas-cta cta-blue" target="_blank">Visitar</a>';
+                        jumbotronHtml += '<a href="' + content.url + '" class="btn my-4 font-weight-bold atlas-cta cta-blue" target="_blank">Proyectos</a>';
                     }
     
                     jumbotronHtml += '</div>' +
@@ -277,7 +277,7 @@
     <script>
         jQuery(document).ready(function() {
             // Cargar contenido dinámico desde el archivo JSON
-            jQuery.getJSON('Herramientas.json', function(data) {
+            jQuery.getJSON('./JSON/Herramientas.json', function(data) {
                 // Recorrer el arreglo de objetos JSON
                 jQuery.each(data, function(index, content) {
                     // Construir el HTML dinámico para el carrusel
@@ -308,7 +308,7 @@
 <script>
     jQuery(document).ready(function() {
         // Cargar contenido dinámico desde el archivo JSON
-        jQuery.getJSON('Clientes.json', function(data) {
+        jQuery.getJSON('./JSON/Clientes.json', function(data) {
             // Recorrer el arreglo de objetos JSON
             jQuery.each(data, function(index, content) {
                 // Construir el HTML dinámico para el primer jumbotron
@@ -333,6 +333,11 @@
     });
 </script>
 
+<!-- Navbar -->
+<script src="./js/navbar.js"></script>
+<script>
+    customNavbar.render('navbar');
+</script>
 
     <!-- AOS -->
     <script src="js/aos.js"></script>

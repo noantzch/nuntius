@@ -1,0 +1,31 @@
+{
+  "1": {
+    "nombre": "Agustin",
+    "descripcion": "Aka Pipe uno de los fundadores de Nuntius, lic. en Analisis de Sistemas. Me apasionan los desafíos, y más aún enfrentarlos con un equipo consolidado. Mi objetivo principalmente es hacer crecer al equipo, y brindar soluciones a nuestros clientes de la manera más profesional y óptima posible."
+  },
+  "2": {
+    "nombre": "Emanuel",
+    "descripcion": "Soy Licenciado en Análisis de Sistemas recibido de la Universidad Nacional de Salta. Actualmente me dedico a ser Analista Programador, soy apasionado a lo relacionado con metodologías agiles y nuevas formas de trabajo para empresas."
+  },
+  "3": {
+    "nombre": "Pablo",
+    "descripcion": "Soy Lic en Análisis de Sistemas y formo parte de nuntius desde finales del 2020. Mis labores dentro del equipo comenzaron dando soporte a usuarios y al pasar el tiempo pude ir probando diferentes roles y responsabilidades entre los más importantes desarrollador (con Genexus) y analista funcional en diferentes proyectos."
+  },
+  "4": {
+    "nombre": "Javier",
+    "descripcion": "Soy Lic. en Análisis de Sistemas y formo parte del equipo de Nuntius desde sus inicios. Empecé como desarrollador, y actualmente cumplo un papel mas relacionado a la gestión de proyectos. Me gustan las cosas geeks y la tecnología. Trato de aportar lo más que pueda al equipo, disfruto mucho pensar en formas de mejorar mi entorno."
+  },
+  "5": {
+    "nombre": "Gabriel",
+    "descripcion": "Soy Tec. Programador con titulo en de la Universidad Nacional de Salta (UNSa). Me gusta mucho la naturaleza, pesar, viajar en moto y jugar al futbol. Actualmente cumplo del rol analista programador en la empresa y formandome como DevOp."
+  },
+  "6":{
+    "nombre": "Lucas",
+    "descripcion": "Soy encargado del hermoso código que sostiene varios proyectos de Nuntius, con mas de 4 años de experiencia me desempeño realizando tareas tanto de desarrollo como de revision, mantenimiento y despliegue de arquitecturas de los sistemas. Entusiasmado de la ciencia ficción, siempre interesado en las nuevas tecnologías y avances cientificos como motor para la motivacion personal. El trabajo en equipo is the way."
+  },
+  "7":{
+    "nombre": "Daniel",
+    "descripcion": "Estudiante avanzado de la Lic. en Análisis de  Sistemas, formo parte de Nuntius desde 2021 y mi rol dentro de la empresa es desarrollador. Me gusta programar y siempre estoy dispuesto a aprender para aportar tanto al equipo como a mi formación profesional. También me gusta entrenar y jugar al fútbol."
+
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+      "title": "Rubro financiero",
+      "text": "Estamos renovando los sistemas que utilizan en una financiera, cambiando a un sistema web que les permite acceder a información en tiempo real a todos los usuarios interesados, trabajo paralelo dentro de la empresa, emisión de reportes a nivel operativo y gerencial, manejo de productos financieros, gestión de cobros, manejo de cajas y muchas funcionalidades más.",
+      "imageUrl": "./Images/img/feature-1.jpg"
+  },
+  {
+      "title": "Rubro medicina",
+      "text": "Estamos trabajando junto con la primera empresa de medicina pospaga de Argentina. Es un proyecto de una idea innovadora que permitirá a los afiliados a pagar menos por su cobertura de salud. El sistema tiene accesos para afiliados, administrativos, prestadores y bocas de pago.",
+      "imageUrl": "./Images/img/feature-22.png"
+  },
+  {
+    "title": "Rubro 3",
+    "text": "Estamos trabajando junto con la primera empresa de medicina pospaga de Argentina. Es un proyecto de una idea innovadora que permitirá a los afiliados a pagar menos por su cobertura de salud. El sistema tiene accesos para afiliados, administrativos, prestadores y bocas de pago.",
+    "imageUrl": "./Images/img/feature-3.png"
+  },
+  {
+  "title": "Tecnologías",
+  "text": "Las tecnologías que trabajamos son HTML5, JavaScript, React, ReactNative, Python, Android, IOS, MySQL, PostgreSQL y más… Pero la tecnología en la que más nos destacamos en Nuntius es GENEXUS. Damos a nuestros clientes la posibilidad de trabajar en conjunto con una herramienta interactiva y friendly en su usabilidad.",
+  "imageUrl": "./Images/img/genexus.jpg",
+  "url": "http://www.google.com"
+  }
+]
