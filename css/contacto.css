@@ -1,6 +1,6 @@
 .container {
     max-width: 400px;
-    margin: 0 auto; 
+    margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 20px;
@@ -8,8 +8,8 @@
     border-radius: 15px;
     background-color: #f9f9f9;
 }
-
-body.dark-mode .container{
+/* modo oscuro */
+body.dark-mode .container {
     background: black;
 }
 
@@ -25,25 +25,27 @@ form {
 .input-group {
     margin-bottom: 10px;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
-.fas{
+/* iconos contacto */
+.fas {
     font-family: "Font Awesome 6 Free" !important;
 }
-.far{
-    font-family: "Font Awesome 6 Free" !important;
 
+.far {
+    font-family: "Font Awesome 6 Free" !important;
 }
+
 .input-group label {
-    width: 100px; 
+    width: 100px;
     font-weight: bold;
     color: #333;
 }
-
+/* para formulario */
 input[type="text"],
 input[type="email"],
 textarea {
-    flex: 1; 
+    flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -51,39 +53,43 @@ textarea {
 }
 
 textarea {
-    vertical-align: top; 
+    vertical-align: top;
 }
 
+/* responsive mapa google */
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 50vh;    /* 50% del alto del viewport */
+    max-width: 100%;    /* Para asegurar que no sobrepase el ancho del contenedor padre */
+    border: solid 1px rgb(181, 181, 181);
+    height: 380px;    /* Tamaño fijo para dispositivos más grandes */
+    width: 540px;
+    margin: auto;
+}
 
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 50vh;    /* 50% del alto del viewport */
+    max-width: 100%;    /* Para asegurar que no sobrepase el ancho del contenedor padre */
+    border: solid 2px rgb(181, 181, 181);
+    height: 380px;    /* Tamaño fijo para dispositivos más grandes */
+    width: 540px;
+}
+
+@media (min-width: 768px) {  /* Estilos específicos para dispositivos con un ancho de pantalla de al menos 768px */
     .mapouter {
-        position: relative;
-        text-align: right;
-        height: 50vh; /* 50% del alto del viewport */
-        max-width: 100%; /* Para asegurar que no sobrepase el ancho del contenedor padre */
-        border: solid 2px black;
+        height: 380px; /* Tamaño fijo para dispositivos más grandes */
     }
 
     .gmap_canvas {
-        overflow: hidden;
-        background: none !important;
-        height: 50vh; /* 50% del alto del viewport */
-        max-width: 100%; /* Para asegurar que no sobrepase el ancho del contenedor padre */
-        border: solid 2px black;
+        height: 380px; /* Tamaño fijo para dispositivos más grandes */
     }
+}
 
-    @media (min-width: 768px) {
-        /* Estilos específicos para dispositivos con un ancho de pantalla de al menos 768px */
-        .mapouter {
-            height: 500px; /* Tamaño fijo para dispositivos más grandes */
-        }
-
-        .gmap_canvas {
-            height: 500px; /* Tamaño fijo para dispositivos más grandes */
-        }
-    }
-
-    .dark-mode .mapouter,
-    .dark-mode .gmap_canvas {
-        border-color: var(--border-color-dark);
-        background-color: var(--background-color-dark);
-    }
+.dark-mode .mapouter,
+.dark-mode .gmap_canvas {
+    border-color: var(--border-color-dark);
+    background-color: var(--background-color-dark);
+}

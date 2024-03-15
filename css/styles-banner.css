@@ -29,6 +29,6 @@ body.dark-mode .filter-back{
         text-align: center;
         padding: 2vw;
         font-size: 10vw;
-        text-shadow: none;
+        text-shadow:  3px 3px 10px black;
     }
 }

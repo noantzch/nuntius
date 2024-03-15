@@ -33,18 +33,6 @@
  body.dark-mode .timeline-content p{
    color: #fff;
  }
-
- body.dark-mode .navbar {
-   background-color: var(--bg-color-dark);
-   color: var(--text-color-dark);
- }
-
- body.dark-mode .navbar a {
-   color: var(--text-color-dark);
- }
- body.dark-mode .navbar .nav-link {
-   color: var(--text-color-dark);
- }
  body.dark-mode .card-text {
    color: var(--text-color-dark) /* Color del texto */
 }

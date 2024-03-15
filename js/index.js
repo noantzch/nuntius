@@ -11,11 +11,7 @@ $(document).ready(function() {
       }
     });
   });
-  
-  //Dark mode
-  function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-  }
+
 
 
   //Script para las cards
